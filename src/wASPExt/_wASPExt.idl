@@ -1,0 +1,45 @@
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\prsht.idl";
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\mshtml.idl";
+import "c:\program files\microsoft visual studio .net 2003\vc7\platformsdk\include\dimm.idl";
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\mshtmhst.idl";
+import "c:\program files\microsoft visual studio .net 2003\vc7\platformsdk\include\docobj.idl";
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\exdisp.idl";
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\objsafe.idl";
+
+[
+	object,
+	uuid(A5003C20-C0B8-437E-A1A1-13BD7716E168),
+	dual,
+	helpstring("IATLSearch 接口"),
+	pointer_default(unique)
+] 
+#line 14 "c:\\development\\wsearch\\waspext\\atlsearch.h"
+interface IATLSearch : IDispatch {
+#line 16 "c:\\development\\wsearch\\waspext\\atlsearch.h"
+	[id(1),helpstring("方法asp_init_query")] HRESULT  asp_init_query([in] LONG bk, [in] BSTR dd, [in]LONG bigmem, [out,retval] LONG *ret);
+	[id(2),helpstring("方法asp_done_query")] HRESULT  asp_done_query([out,retval] LONG *ret);
+	[id(3),helpstring("方法asp_highlight")] HRESULT  asp_highlight([in] BSTR fn, [in] BSTR qn, [in] BSTR preTag, [in] BSTR postTag, [out,retval] BSTR *ret );
+	[id(4),helpstring("方法asp_fetch_total")] HRESULT  asp_fetch_total([out,retval] LONG *ret);
+	[id(5),helpstring("方法asp_do_query")] HRESULT  asp_do_query([in] LONG i, [in] LONG j, [in] BSTR q, [out,retval] VARIANT *ret);
+	[id(6),helpstring("方法asp_highlight_content")] HRESULT  asp_highlight_content([in] BSTR content, [in] LONG len, [in] BSTR qn, [in] BSTR preTag, [in] BSTR postTag, [out,retval] BSTR *ret );
+};
+
+
+[ version(1.0), uuid(5BCDA827-EB30-456C-BF60-32FD3DA95DE5), helpstring("wASPExt 1.0 类型库") ]
+library wASPExt
+{
+	importlib("stdole2.tlb");
+	importlib("olepro32.dll");
+
+	[
+		version(1.0),
+		uuid(8FF7A0F2-DA87-4231-972F-B7776E5A7E58),
+		helpstring("ATLSearch Class")
+	] 
+#line 37 "c:\\development\\wsearch\\waspext\\atlsearch.h"
+	coclass CATLSearch {
+		interface IATLSearch;
+	};
+
+}
+

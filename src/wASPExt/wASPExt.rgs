@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		'%APPID%' = s 'wASPExt'
+		'wASPExt.DLL'
+		{
+			val AppID = s '%APPID%'
+		}
+	}
+}

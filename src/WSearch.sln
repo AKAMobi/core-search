@@ -1,0 +1,76 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wIndexer", "wIndexer\wIndexer.vcproj", "{7AB280F1-0C43-400E-A959-E8461125EBD1}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wSearcher", "wSearcher\wSearcher.vcproj", "{9E681F18-A936-48AE-99B0-38CD01901190}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wQuery", "wQuery\wQuery.vcproj", "{7DF47458-1AFC-46B1-A87B-BCE3B36C0B3D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wASPExt", "wASPExt\wASPExt.vcproj", "{B6DF3ED4-AEDF-4FEF-BB64-A1E32D38E2C5}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wASPExtPS", "wASPExt\wASPExtPS.vcproj", "{32DCC9B4-A046-4BB8-831E-2718D9F6CF3E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B6DF3ED4-AEDF-4FEF-BB64-A1E32D38E2C5} = {B6DF3ED4-AEDF-4FEF-BB64-A1E32D38E2C5}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wPHPExt", "wPHPExt\wPHPExt.vcproj", "{2B853C54-AD70-46CC-8C23-EDE11AE3E804}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wSearcherService", "Sample\wSearcherService\wSearcherService.vcproj", "{1E446A8B-3FC6-452A-BC02-286D5DD26D89}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "K12-wSearch", "K12-wSearch\K12-wSearch.vcproj", "{CB705BEF-208D-43D5-97A3-7FE6F390047C}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{7AB280F1-0C43-400E-A959-E8461125EBD1}.Debug.ActiveCfg = Debug|Win32
+		{7AB280F1-0C43-400E-A959-E8461125EBD1}.Debug.Build.0 = Debug|Win32
+		{7AB280F1-0C43-400E-A959-E8461125EBD1}.Release.ActiveCfg = Release|Win32
+		{7AB280F1-0C43-400E-A959-E8461125EBD1}.Release.Build.0 = Release|Win32
+		{9E681F18-A936-48AE-99B0-38CD01901190}.Debug.ActiveCfg = Debug|Win32
+		{9E681F18-A936-48AE-99B0-38CD01901190}.Debug.Build.0 = Debug|Win32
+		{9E681F18-A936-48AE-99B0-38CD01901190}.Release.ActiveCfg = Release|Win32
+		{9E681F18-A936-48AE-99B0-38CD01901190}.Release.Build.0 = Release|Win32
+		{7DF47458-1AFC-46B1-A87B-BCE3B36C0B3D}.Debug.ActiveCfg = Debug|Win32
+		{7DF47458-1AFC-46B1-A87B-BCE3B36C0B3D}.Debug.Build.0 = Debug|Win32
+		{7DF47458-1AFC-46B1-A87B-BCE3B36C0B3D}.Release.ActiveCfg = Release|Win32
+		{7DF47458-1AFC-46B1-A87B-BCE3B36C0B3D}.Release.Build.0 = Release|Win32
+		{B6DF3ED4-AEDF-4FEF-BB64-A1E32D38E2C5}.Debug.ActiveCfg = Debug|Win32
+		{B6DF3ED4-AEDF-4FEF-BB64-A1E32D38E2C5}.Debug.Build.0 = Debug|Win32
+		{B6DF3ED4-AEDF-4FEF-BB64-A1E32D38E2C5}.Release.ActiveCfg = Release|Win32
+		{B6DF3ED4-AEDF-4FEF-BB64-A1E32D38E2C5}.Release.Build.0 = Release|Win32
+		{32DCC9B4-A046-4BB8-831E-2718D9F6CF3E}.Debug.ActiveCfg = Debug|Win32
+		{32DCC9B4-A046-4BB8-831E-2718D9F6CF3E}.Release.ActiveCfg = Release|Win32
+		{2B853C54-AD70-46CC-8C23-EDE11AE3E804}.Debug.ActiveCfg = Debug|Win32
+		{2B853C54-AD70-46CC-8C23-EDE11AE3E804}.Debug.Build.0 = Debug|Win32
+		{2B853C54-AD70-46CC-8C23-EDE11AE3E804}.Release.ActiveCfg = Release|Win32
+		{2B853C54-AD70-46CC-8C23-EDE11AE3E804}.Release.Build.0 = Release|Win32
+		{1E446A8B-3FC6-452A-BC02-286D5DD26D89}.Debug.ActiveCfg = Debug|Win32
+		{1E446A8B-3FC6-452A-BC02-286D5DD26D89}.Debug.Build.0 = Debug|Win32
+		{1E446A8B-3FC6-452A-BC02-286D5DD26D89}.Release.ActiveCfg = Release|Win32
+		{1E446A8B-3FC6-452A-BC02-286D5DD26D89}.Release.Build.0 = Release|Win32
+		{CB705BEF-208D-43D5-97A3-7FE6F390047C}.Debug.ActiveCfg = Debug|Win32
+		{CB705BEF-208D-43D5-97A3-7FE6F390047C}.Debug.Build.0 = Debug|Win32
+		{CB705BEF-208D-43D5-97A3-7FE6F390047C}.Release.ActiveCfg = Release|Win32
+		{CB705BEF-208D-43D5-97A3-7FE6F390047C}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
